@@ -1,0 +1,9 @@
+<!--pages/index/index.wxml-->
+<custom-navigation bgImage="../../images/wave.png">
+</custom-navigation>
+<view class="content">
+  <NoteList notes="{{notes}}" bottom="{{bottom}}" bind:parentClear="clear" id="notes">
+    
+  </NoteList>
+  <image class="write" bindtap="write" src="../../images/index/write.png"></image>
+</view>

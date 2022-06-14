@@ -1,0 +1,21 @@
+<!--pages/individual/individual.wxml-->
+<view class="content">
+  <image class="wave" src="../../images/wave.png"></image>
+  <image class="head-image" src="{{avatarUrl==''?'../../images/individual/image.svg':avatarUrl}}" bindtap="loginUser">
+  </image>
+  <text class="nickname">{{nickName==''?'点击头像登陆':nickName}}</text>
+  <view class="function-case">
+    <view class="function-item">
+      <text>完善信息</text>
+      <image src="../../images/individual/arrow.svg"></image>
+    </view>
+    <view class="function-item">
+      <text>更多功能</text>
+      <image src="../../images/individual/arrow.svg"></image>
+    </view>
+    <view class="function-item">
+      <text>联系我们</text>
+      <image src="../../images/individual/arrow.svg"></image>
+    </view>
+  </view>
+</view>

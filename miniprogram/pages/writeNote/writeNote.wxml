@@ -1,0 +1,22 @@
+<!--pages/writeNote/writeNote.wxml-->
+<view class="content">
+  <image class="wave" src="../../images/wave.png"></image>
+  <image class="back" src="../../images/writeNote/back.png" bindtap="back"></image>
+  <view class="write-note-case">
+    <view class="head">
+      <input type="text" class="title" placeholder="未命名" value="{{title}}" maxlength="6" />
+      <view class="test"></view>
+      <image class="save" bindtap="save" src="{{empty?'../../images/writeNote/cannotSave.png':'../../images/writeNote/canSave.png'}}"></image>
+    </view>
+    <view class="time">{{editTime}}</view>
+    <editor id="editor" class="editor" placeholder="{{placeholder}}" show-img-size="true" bindstatuschange="onStatusChange" bindready="onEditorReady" bindinput="onEditorInput"></editor>
+    <view class="menu">
+      <image class="item" src="../../images/writeNote/storeNote.png"></image>
+      <image class="item" src="../../images/writeNote/makePublic.png"></image>
+      <image class="item" src="../../images/writeNote/semanticAnalysis.png" bindtap="nlp"></image>
+      <image class="item" src="../../images/writeNote/uploadImage.png" catchtouchend="insertImage"></image>
+      <image class="item" src="../../images/writeNote/download.png"></image>
+    </view>
+  </view>
+  <!-- <NoteBar></NoteBar> -->
+</view>

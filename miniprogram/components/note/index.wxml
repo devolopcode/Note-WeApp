@@ -1,0 +1,4 @@
+<!--components/note/index.wxml-->
+<view class="container">
+  <view class="content">test</view>
+</view>

@@ -1,0 +1,69 @@
+.back{
+  position: absolute;
+  top: 96rpx;
+  left: 48rpx;
+  width: 48rpx;
+  height: 48rpx;
+}
+.write-note-case {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 6% 76% 8%;
+  grid-auto-flow: row dense;
+  position: relative;
+  top: 224rpx;
+  width: 86vw;
+  height: 78vh;
+  border-radius: 29rpx;
+  background-color: #ffffff;
+
+  .head{
+    display: flex;
+    place-self: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 76vw;
+    height: 9vh;
+    gap: 30px;
+    .title {
+      flex-grow: 1;
+      height: 9vh;
+      width: auto;
+      border: none;
+      font-size: 9vw;
+      line-height: 9vh;
+      font-family: "Source Han Sans CN";
+      display: inline-block;
+    }
+    .save {
+      flex-shrink: 0;
+      width: 48rpx;
+      height: 48rpx;
+    }
+  }
+  .time{
+    place-self: start center;
+    width: 76vw;
+    display: block;
+    color: #838785;
+  }
+  .editor{
+    display: block;
+    justify-self: center;
+    width: 76vw;
+    height: 56vh;
+  }
+  .menu{
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    justify-self: center;
+    align-items: center;
+    width: 83vw;
+    height: 48rpx;
+    .item{
+      justify-self: center;
+      width: 48rpx;
+      height: 48rpx;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "NoteList":"../../components/noteList/noteList",
+    "custom-navigation":"../../custom-navigation/index"
+  },
+  "disableScroll": true
+}

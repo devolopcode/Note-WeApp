@@ -1,0 +1,32 @@
+<!--components/noteList/noteList.wxml-->
+<wxs module="m1">
+  function getDate(date) {
+    var reg = getRegExp('T|\.\d{3}Z', 'g')
+    return date.replace(reg, ' ')
+  }
+  function getText(text) {
+    if (typeof text === "string") {
+      return text
+    } else {
+      return '[图片]'
+    }
+  }
+  module.exports.getDate = getDate
+  module.exports.getText = getText
+</wxs>
+<view class="container" style="height: calc(89vh - {{CustomBar}}px);">
+  <view class="search-case {{show?'slideUp':'slideDown'}}">
+    <input type="text" id="search-input" placeholder="搜索标题/内容" bindinput="input" value="{{keyword}}" />
+    <image class="search-btn" src="../../images/index/search.svg"></image>
+  </view>
+  <scroll-view class="note-list" style="height: calc(89vh - {{CustomBar}}px - 100rpx);" bindscroll="scroll"  scroll-y="true" enable-flex="true" bindtouchstart="touchStart" bindtouchend="touchEnd">
+    <view class="note-item" wx:for="{{notes}}" wx:key="index" bindtap="edit" data-_id="{{item._id}}">
+      <image src="http://127.0.0.1:8080/api/i/show/default.png"></image>
+      <view class="note">
+        <text class="title">{{item.title}}</text>
+        <text class="time">{{item.editTime}}</text>
+        <text class="text">{{m1.getText(item.contents[0].insert)}}</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>

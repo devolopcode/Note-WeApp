@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/individual/individual",
+    "pages/index/index",
+    "pages/writeNote/writeNote",
+    "pages/classify/classify",
+    "pages/logs/logs",
+    "components/note/index"
+  ],
+  "window": {
+    "navigationStyle": "custom"
+  },
+  "plugins": {
+    "chatbot": {
+      "version": "1.2.23",
+      "provider": "wx8c631f7e9f2465e1"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/classify/classify",
+        "iconPath": "images/tabBar/classify.png",
+        "selectedIconPath": "images/tabBar/classify-select.png",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tabBar/notebook.png",
+        "selectedIconPath": "images/tabBar/notebook-select.png",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/individual/individual",
+        "iconPath": "images/tabBar/individual.png",
+        "selectedIconPath": "images/tabBar/individual-select.png",
+        "text": ""
+      }
+    ]
+  },
+  "usingComponents": {}
+}

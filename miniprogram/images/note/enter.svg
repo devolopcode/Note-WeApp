@@ -1,0 +1,19 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 38" width="51" height="38">
+	<title>图层 1</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M50.68 38.27L0.68 38.27L0.68 0.72L50.68 0.72L50.68 38.27Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+	</style>
+	<g id="图层 1">
+		<g id="&lt;Group&gt;">
+			<g id="&lt;Clip Group&gt;" clip-path="url(#cp1)">
+				<path id="&lt;Compound Path&gt;" fill-rule="evenodd" class="shp0" d="M22.58 0.79L22.58 10.13C25.1 10.12 29.16 10.11 34.84 10.16C41.87 10.23 46.76 7.14 49.53 0.91L50.69 0.79C50.56 10.57 48.18 17.44 43.56 21.41C39.1 25.25 32.1 27.74 22.58 28.9L22.58 38.27L0.73 19.53L22.58 0.79ZM49.72 26.67L49.8 26.67C49.79 26.67 49.78 26.68 49.76 26.68C49.74 26.68 49.73 26.67 49.72 26.67ZM50.08 25.9L50.09 25.9C50.09 25.9 50.08 25.9 50.08 25.9Z" />
+			</g>
+		</g>
+	</g>
+</svg>

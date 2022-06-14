@@ -1,0 +1,4 @@
+<!--components/noteBar/index.wxml-->
+<view class="container">
+  <Note wx:for="{{8}}" wx:key="index"></Note>
+</view>

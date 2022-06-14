@@ -1,0 +1,117 @@
+.container {
+  overflow-y: hidden;
+  display: flex;
+  flex-flow: column;
+  row-gap: 15rpx;
+
+  .note-list {
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+    flex-grow: 1;
+    align-items: center;
+
+    .note-item {
+      position: relative;
+      top: 15rpx;
+      box-sizing: border-box;
+      width: 679rpx;
+      min-height: 161rpx;
+      border-radius: 34rpx;
+      margin-bottom: 30rpx;
+      background-color: #ffffffba;
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+
+      image {
+        position: relative;
+        left: 24rpx;
+        display: block;
+        width: 119rpx;
+        height: 119rpx;
+        border-radius: 24rpx;
+      }
+
+      .note {
+        position: relative;
+        left: 50rpx;
+        height: 119rpx;
+        width: 480rpx;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+
+        text {
+          position: relative;
+          display: block;
+          // 字体超出换成省略号
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .title {
+          font-size: 36rpx;
+          font-weight: bold;
+          width: 50%;
+          line-height: 40rpx;
+          height: 40rpx;
+        }
+
+        .time {
+          position: absolute;
+          top: 11rpx;
+          right: 0rpx;
+          font-size: 24rpx;
+          color: #777777;
+        }
+
+        .text {
+          font-size: 30rpx;
+          line-height: 1.2;
+          height: 36rpx;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .search-case {
+    position: relative;
+    display: flex;
+    align-items: center;
+    left: calc((100vw - 679rpx)/2);
+    z-index: 1;
+    width: 679rpx;
+    background: #fff;
+    border-radius: 16rpx;
+    text-indent: 16rpx;
+    box-sizing: border-box;
+
+    #search-input {
+      height: 100rpx;
+      background-color: #fff;
+      border-radius: 17rpx;
+      padding: 0 71rpx 0 17rpx;
+    }
+
+    .search-btn {
+      position: absolute;
+      right: 17rpx;
+      width: 44rpx;
+      height: 44rpx;
+    }
+  }
+
+  .slideUp {
+    min-height: 100rpx;
+    transition: all .5s ease-out;
+  }
+
+  /*导航菜单向下滑动*/
+  .slideDown {
+    min-height: 60rpx;
+    transition: all .5s ease-out;
+  }
+}

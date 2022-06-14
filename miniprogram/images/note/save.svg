@@ -1,0 +1,12 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 51" width="51" height="51">
+	<title>图层 1</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+	</style>
+	<g id="图层 1">
+		<g id="&lt;Group&gt;">
+			<path id="&lt;Compound Path&gt;" fill-rule="evenodd" class="shp0" d="M50.3 38.62L48.09 50.35L2.44 50.35L0.3 38.62L9.28 32.38L14.09 32.38L6.08 38.62L14.89 38.62L15.63 39.06L18.09 44.85L32.51 44.85L34.97 39.06L35.72 38.62L44.58 38.62L36.52 32.38L41.32 32.38L50.3 38.62ZM29.49 10.07L29.49 14.64L43.11 14.64L25.32 30.4L7.54 14.64L21.22 14.64L21.22 10.07L29.49 10.07ZM29.49 -0.1L29.49 4.99L21.22 4.99L21.22 -0.1L29.49 -0.1Z" />
+		</g>
+	</g>
+</svg>

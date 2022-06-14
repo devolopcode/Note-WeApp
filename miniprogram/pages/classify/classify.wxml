@@ -1,0 +1,13 @@
+<!--pages/classify/classify.wxml-->
+<view class="content">
+  <image class="wave" src="../../images/wave0.png"></image>
+  <view class="type-list">
+    <view class="super-scholar-type">
+      <text>学霸笔记入口</text>
+    </view>
+    <view class="type-item" wx:for="{{typeList}}" wx:key="index">
+      <image src="{{item.url}}" mode="aspectFit"></image>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,25 @@
+/**app.wxss**/
+page {
+  width: 100vh;
+  height: 100vw;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.content {
+  position: relative;
+  width: 100vh;
+  height: 100vw;
+  background: linear-gradient(148deg, #7cc485 0%, #44b89d 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wave {
+  position: absolute;
+  top: 0rpx;
+  width: 750rpx;
+  height: 178rpx;
+}
